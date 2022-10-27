@@ -1,0 +1,26 @@
+.app {
+  max-width: 1440px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+}
+
+@media (min-width: 1000px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 0px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+  }
+}
